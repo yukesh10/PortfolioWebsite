@@ -1,0 +1,242 @@
+
+/* 
+    main-color: #35605A
+    secondary-color: #f15025
+    text-color: #dbe4ee
+*/
+
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    background-color: #35605A;
+    color: #dbe4ee;
+    font-weight: 600;
+}
+
+.transparent{
+    background-color: #35605A;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #dbe4ee;
+}
+
+.navbar-dark .navbar-brand{
+    color: #f15025;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #f15025;
+}
+
+.navbar-dark .navbar-brand:focus, 
+.navbar-dark .navbar-brand:hover{
+    color: #dbe4ee;
+}
+
+.banner{
+    height: 100vh;
+    line-height: 1.2 !important;
+}
+
+.banner .display-5{
+    font-size: 20px;
+}
+
+.resumeBtn{
+    border: 1px solid #f15025;
+    color: #dbe4ee;
+}
+
+.resumeBtn:hover{
+    color: #dbe4ee;
+    border: 1px solid #dbe4ee;
+    background-color: #f15025;
+}
+
+.button{
+    border: 2px solid #f15025;
+    width: 200px;
+    color: #dbe4ee;
+    height: 50px;
+    padding: 10px;
+}
+
+.button:hover{
+    /* border: 2px solid #dbe4ee; */
+    background-color: rgba(241, 80, 37, 0.5);
+    /* opacity: 0.6; */
+    color: #dbe4ee;
+}
+
+p strong{
+    color: #f15025;
+}
+
+#myName{
+    border-bottom: 3px solid #dbe4ee;
+    padding-bottom: 3px;
+}
+
+#about, #projects, #contact{
+    /* height: 100vh; */
+    padding-top: 50px;
+    /* background-color: blue; */
+    /* background-color: darkgrey; */
+}
+
+.title-underline{
+    width: 300px;
+    border: 3px solid #dbe4ee;
+    margin: 0 auto 20px auto;
+}
+
+.customText{
+    font-size: 18px;
+}
+
+.colorText{
+    color: #f15025;
+}
+
+.skills li{
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    text-transform: uppercase;
+}
+
+.skills .java{
+    margin: 0;
+}
+
+.skills li:before{
+    content: "";
+    position: absolute;
+    top:calc(100% + 10px);
+    left:0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(241, 80, 37, 0.3);
+    border-radius: 1000px;
+}
+
+.skills li:after{
+    content: "";
+    position: absolute;
+    top:calc(100% + 10px);
+    left:0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(241, 80, 37, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.skills li.java:after{
+    animation-name: java;
+}
+
+@keyframes java{
+    to{
+        width: 80%;
+    }
+}
+
+.skills li.cplusplus:after{
+    animation-name: cplusplus;
+}
+
+@keyframes cplusplus{
+    to{
+        width: 60%;
+    }
+}
+
+.skills li.js:after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 70%;
+    }
+}
+
+.skills li.htmlcss:after{
+    animation-name: htmlcss;
+}
+
+@keyframes htmlcss{
+    to{
+        width: 90%;
+    }
+}
+
+.skills li.react:after{
+    animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 75%;
+    }
+}
+
+.skills li.bootstrap:after{
+    animation-name: bootstrap;
+}
+
+@keyframes bootstrap{
+    to{
+        width: 70%;
+    }
+}
+
+.skills li.django:after{
+    animation-name: django;
+}
+
+@keyframes django{
+    to{
+        width: 75%;
+    }
+}
+
+.mainProjectImage{
+    width: 100%;
+    height: 26rem;
+}
+
+.otherProjectImage{
+    width: 100%;
+    height: 18rem;
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2); */
+}
+
+.cardBtn{
+    border: 1px solid red;
+}
+
+#projects{
+    color: black;
+}
+
+#footer .fa{
+    color: #f15025;
+}
+
+#footer .fa:hover{
+    color: #dbe4ee;
+}
+
+
+.cardA:hover{
+    text-decoration: none;
+}
