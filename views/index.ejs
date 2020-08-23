@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Portfolio - Yukesh</title>
+  </head>
+
+  <body>
+    <div id="headerBackground">
+      <header>
+        <nav
+          class="navbar fixed-top navbar-expand-md navbar-dark transparent px-5"
+        >
+          <a class="navbar-brand" href="#">YukeshSitoula</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="resume/resume.pdf"
+                  class="btn btn-block resumeBtn ml-3"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div
+          class="banner d-flex flex-column justify-content-center text-center align-items-center"
+        >
+          <!-- <p class="display-3 mainScreenNameText">Hi, my name is <strong id="myName">YUKESH SITOULA</strong></strong>
+                </p>
+                <p class="display-5 mainScreenProfesssionText"><strong>I'm a </strong>Entry-Level Software Developer</p>
+                <a href="#contact" class="btn btn-block button mt-2"><strong>Get In Touch</strong></a> -->
+
+          <p class="display-2 mainText">
+            Hello, I'm <span class="blueColor">Yukesh Sitoula</span><br />
+            <span class="redColor">Software</span> Developer,<br />
+            <span class="redColor">Web</span> Developer<br />
+            based in
+            <span class="blueColor">Arlington, VA</span>
+          </p>
+          <a href="#contact" class="btn btn-block button mt-4"
+            ><strong>Get In Touch</strong></a
+          >
+        </div>
+      </header>
+    </div>
+
+    <div id="aboutBackground">
+      <section id="about" class="container-fluid text-center">
+        <div class="title mb-4">
+          <p class="display-4"><strong>About Me</strong></p>
+          <div class="title-underline"></div>
+        </div>
+        <div class="row d-flex justify-content-around align-items-center">
+          <div class="col-sm-6">
+            <div class="card mb-4" style="width: 15rem; margin: 0 auto;">
+              <img
+                src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/107705397_1595458337284156_7377640204863268024_o.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=qAArGUUqIkIAX9jM9dD&_nc_ht=scontent-iad3-1.xx&oh=e67da133a832544170a80798e0918476&oe=5F648FC6"
+                class="card-img-top"
+                alt="Profile Picture"
+              />
+            </div>
+            <p class="customText">
+              Hi, My name is <span class="colorText">Yukesh Sitoula</span>. I am
+              from <span class="colorText">Arlington, VA</span> .<br />
+              <br />I enjoy creating web applications that addresses immediate
+              problems or projects that I like to pursue. My goal is to create
+              product that works smoothly on all devices. <br /><br />
+              I graduated from
+              <span class="colorText">University of Virginia</span> in May 2020.
+              I am looking for entry level software developer or web developer
+              job. If you have any opportunity for me, please contact me.
+              <a
+                href="#"
+                class="btn btn-block button mt-2"
+                style="width: 70%; margin: 0 auto;"
+                ><strong>Get In Touch</strong></a
+              >
+            </p>
+          </div>
+          <div class="col-sm-6 text-left">
+            <ul class="skills">
+              <li class="java">Java</li>
+              <li class="cplusplus">C++</li>
+              <li class="js">JavaScript</li>
+              <li class="htmlcss">HTML5/CSS3</li>
+              <li class="react">React</li>
+              <li class="bootstrap">Bootstrap</li>
+              <li class="django">Django</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="projectsBackground">
+      <section id="projects" class="container-fluid text-center mb-5">
+        <div class="title mb-4">
+          <p class="display-4"><strong>My Projects</strong></p>
+          <div class="title-underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <a
+              href="http://stockvaluetracker.herokuapp.com"
+              target="_blank"
+              class="cardA"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top otherProjectImage"
+                  src="img/stockWebApp.PNG"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text text-info font-weight-bold">
+                    Stock Value Tracker
+                  </p>
+                  <p class="text-muted card-text">
+                    A full stack web application that allows user to list out
+                    the stock and set minimum and maximum limit. When the price
+                    of the stock goes below the set minimum price or above the
+                    set maximum price, the web application will inform the user
+                    via email.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 mb-3">
+            <a
+              href="https://chrome.google.com/webstore/detail/uva-library-extension/cohcihafdambijnmcfdegncecmjigang?hl=en-US"
+              target="_blank"
+              class="cardA"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top otherProjectImage"
+                  src="img/extension.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text text-info font-weight-bold">
+                    UVA Library Browser Extension
+                  </p>
+                  <p class="text-muted card-text">
+                    A group project for our senior year capstone class inspired
+                    by the lack of usage of library resources. Our team worked
+                    to encourage users to easily and afforably access library
+                    resources, instead of purchasing them from common e-commerce
+                    and academic research platforms.
+                  </p>
+                  <!-- <p class="card-text text-info text-left">*** This is the group project, developed in the group of 7 people as our Capstone project.</p> -->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 mb-3">
+            <a
+              href="https://project-101-textg1.herokuapp.com/"
+              target="_blank"
+              class="cardA"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top otherProjectImage"
+                  src="img/textg1.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text text-info font-weight-bold">
+                    Textg1 (website to buy and sell used books)
+                  </p>
+                  <p class="text-muted card-text">
+                    This is the group project, developed in the group of 5
+                    people for my Advanced Software Development class. A website
+                    that allows user to buy and/or sell textbook. This website
+                    was initially developed for UVA students. But later during
+                    our development phase, we decided to make it for everyone.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="contactBackground">
+      <section id="contact" class="container-fluid text-center mb-5">
+        <div class="title mb-4">
+          <p class="display-4"><strong>Contact Me</strong></p>
+          <div class="title-underline"></div>
+        </div>
+        <div class="row d-flex flex-column align-items-center">
+          <p class="messageSent">Message Sent!</p>
+          <div class="col-lg-8 text-left">
+            <div class="form">
+              <div class="form-group">
+                <label for="name">Full name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <p class="error nameError">Please enter your name</p>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+                <p class="error emailError">Please enter your email Address</p>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your phone number"
+                />
+                <p class="error phoneError">Please enter your phone number</p>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Message"
+                  name="message"
+                  rows="3"
+                  required
+                ></textarea>
+                <p class="error messageError">Please enter your message</p>
+              </div>
+              <button
+                style="width: 100%;"
+                class="btn btn-block button submitBtn"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="footer" class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="display-5 text-muted">&copy; 2020 Yukesh Sitoula</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-github mx-2 display-5"></i></a>
+            <a href="#"><i class="fa fa-facebook mx-2 display-5"></i></a>
+            <a href="#"><i class="fa fa-twitter mx-2 display-5"></i></a>
+            <a href="#"><i class="fa fa-instagram mx-2 display-5"></i></a>
+            <a href="#"><i class="fa fa-linkedin mx-2 display-5"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="logic.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/4b45d4b476.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
+      integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="jquery.lettering-0.6.1.min.js"></script>
+  </body>
+</html>
