@@ -36,13 +36,14 @@ async function sendEmail(emailAddress, name, phoneNumber, message){
     });
 
     let mailOptions = {
-        from: 'My Personal Website',
-        to: emailAddress,
+        from: `My Personal Website <forprogrammingandtesting@gmail.com>`,
+        to: 'ys2ck@virginia.edu',
         subject: 'Message from my personal website',
-        text: `Hello Yukesh,
-        Name: ${name}
-        phoneNumber: ${phoneNumber}
-        message: ${message}`
+        text: `Contact Person Information:
+    Name: ${name}
+    phoneNumber: ${phoneNumber}
+    email: ${emailAddress}
+    message: ${message}`
     } 
 
     transporter.sendMail(mailOptions, function(error, info){
